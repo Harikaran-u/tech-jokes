@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 
@@ -8,10 +8,18 @@ const dummyCredential = {
 };
 
 const Login = () => {
+  const navigate = useNavigate();
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [isValidCredential, setValidCredential] = useState(false);
-  const navigate = useNavigate();
+  const isValidUser = localStorage.getItem("isValidUser");
+
+  useEffect(() => {
+    if (isValidUser) {
+      navigate("/", { replace: true });
+    }
+  }, []);
+
   const validateUser = () => {
     if (
       username === dummyCredential.username &&

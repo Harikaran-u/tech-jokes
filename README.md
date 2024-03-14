@@ -1,8 +1,31 @@
-# React + Vite
+# React Top 10 Jokes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Dummy Login credentials**
 
-Currently, two official plugins are available:
+1. username - sample_1
+2. password - sample123
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**UI Demo**
+
+Login
+
+![Login Demo](https://res.cloudinary.com/diuvnny8c/image/upload/v1710385760/Screenshot_371_nhgrpj.png)
+
+Jokes
+
+![Jokes](https://res.cloudinary.com/diuvnny8c/image/upload/v1710385761/Screenshot_372_gvjp8h.png)
+
+Not Found
+
+![Not Found](https://res.cloudinary.com/diuvnny8c/image/upload/v1710385966/Screenshot_373_jvjoz8.png)
+
+# Tech Stacks Used
+
+1. React Js
+2. Bootstrap
+3. React Hooks
+4. React Router
+
+---
+
+Please log in to enjoy the jokes

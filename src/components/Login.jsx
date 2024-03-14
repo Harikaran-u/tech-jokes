@@ -12,7 +12,7 @@ const Login = () => {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [isValidCredential, setValidCredential] = useState(false);
-  const isValidUser = localStorage.getItem("isValidUser");
+  const isValidUser = JSON.parse(localStorage.getItem("isValidUser"));
 
   useEffect(() => {
     if (isValidUser) {

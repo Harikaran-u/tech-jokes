@@ -12,7 +12,7 @@ const JokeTable = () => {
   const [jokeList, setJokeList] = useState([]);
   const [apiError, setApiError] = useState(false);
   const [isLoading, setLoading] = useState(true);
-  const isValidUser = localStorage.getItem("isValidUser");
+  const isValidUser = JSON.parse(localStorage.getItem("isValidUser"));
 
   const getJokes = async () => {
     const response = await fetch(jokeUrl);
